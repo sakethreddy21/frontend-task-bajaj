@@ -47,7 +47,7 @@ const VisibilitySelector: React.FC<VisibilitySelectorProps> = ({ onChange }) => 
           checked={selected.includes('highest_lowercase_alphabet')}
           onChange={handleChange}
         />
-        Highest Alphabet
+        Highest Lowercase Alphabet
       </label>
     </div>
   );

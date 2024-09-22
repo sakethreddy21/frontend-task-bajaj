@@ -75,7 +75,7 @@ const DropdownMenu: React.FC<DropdownMenuProps> = ({ data, visibility }) => {
       )}
 
       {/* Highest Alphabet */}
-      {(!hasFilters || visibility.includes('Highest Alphabet')) && data.highest_lowercase_alphabet.length > 0 && (
+      {(!hasFilters || visibility.includes('highest_lowercase_alphabet')) && data.highest_lowercase_alphabet.length > 0 && (
         <div className='flex flex-row gap-x-2'>
           <h3>Highest lowercase alphabet</h3>::<ul>
             {data.highest_lowercase_alphabet.map((alpha, index) => (
