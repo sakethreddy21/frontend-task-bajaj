@@ -12,7 +12,7 @@ const useGetData = () => {
       setLoading(true);
       setError(null);
       try {
-        const response = await axios.get('http://localhost:3000/bfhl');
+        const response = await axios.get('https://backend-task-bajaj-pi.vercel.app/bfhl');
         setData(response.data);
       } catch (err:any) {
         setError(err.response ? err.response.data.message : err.message);

@@ -10,7 +10,7 @@ const usePostData = () => {
     setLoading(true);
     setError(null);
     try {
-      const response = await axios.post('http://localhost:3000/bfhl', payload);
+      const response = await axios.post('https://backend-task-bajaj-pi.vercel.app/bfhl', payload);
      return response.data
     } catch (err: any) {
       setError(err.response?.data?.message || err.message);
